@@ -84,7 +84,6 @@ a {
     align-content: center;
     width: 500px;
     height: 150px;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -99,7 +98,7 @@ a {
 }
 
 @keyframes fall {
-    0% {
+    from {
         transform: translateY(0);
     }
     15% {
@@ -147,7 +146,7 @@ a {
         width: 51px;
         height: 49px;
     }
-    100%{
+    to{
         transform: translateY(400px);
     }
 }
