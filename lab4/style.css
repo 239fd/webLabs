@@ -1,0 +1,153 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+}
+
+a {
+    font-size: 20px;
+}
+@keyframes button-animation{
+    from {padding-right: -2px}
+    to {padding-left: 2px}
+}
+
+.animated-button{
+    animation: button-animation;
+    animation-duration: 3ms;
+    animation-iteration-count: infinite;
+}
+
+.animated-button:hover{
+    animation: none;
+    background-color: green;
+    transition: 0.5s;
+}
+
+.animated-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.animated-link:hover{
+    color: green;
+}
+
+.animated-link::after{
+    display: block;
+    content: " ";
+    margin-top: 2px;
+    width: 0px;
+    height: 2px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.animated-link:hover::after{
+    background-color: green;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.wrapper{
+    padding: 50px;
+    display: flex;
+    align-content: center;
+    width: 500px;
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ball {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    animation: fall 2.5s ease-in-out forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        width: 50px;
+        height: 50px;
+    }
+    25%{
+        width: 55px;
+        height: 45px;
+    }
+    30%{
+        transform: translateY(400px);
+        width: 60px;
+        height: 40px;
+    }
+    45% {
+        transform: translateY(200px);
+        width: 50px;
+        height: 50px;
+    }
+    55%{
+        width: 53px;
+        height: 47px;
+    }
+    60%{
+        transform: translateY(400px);
+        width: 56px;
+        height: 44px;
+    }
+    75% {
+        transform: translateY(300px);
+        width: 50px;
+        height: 50px;
+    }
+    85%{
+        width: 51px;
+        height: 49px;
+    }
+    90%{
+        transform: translateY(400px);
+        width: 52px;
+        height: 48px;
+    }
+    95%{
+        width: 51px;
+        height: 49px;
+    }
+    100%{
+        transform: translateY(400px);
+    }
+}
