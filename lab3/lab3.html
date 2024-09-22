@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title> Форма подбора вакансий </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form action="" method="post" style="width: 500px; margin: auto">
+        <fieldset>
+            <legend>Поиск вакансий</legend>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <label for="recentlyAdded">Недавно добавленные </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="recentlyAdded">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="noExp">Без опыта </label>
+                    </td>
+                    <td>
+                        <input type="radio" id="noExp" name="exp" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oneThreeYearsExp">Опыт 1-3 года </label>
+                    </td>
+                    <td>
+                        <input type="radio" id="oneThreeYearsExp" name="exp" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="moreThreeYearsExp">Опыт более 3 лет </label>
+                    </td>
+                    <td>
+                        <input type="radio" id="moreThreeYearsExp" name="exp" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel">Телефон для связи: </label>
+                    </td>
+                    <td>
+                        <input type="tel" id="tel" name="tel" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email-address">Email для связи <br> (будущий логин): </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email-address" name="email-address" required>
+                    </td>
+                </tr>
+                <tr></tr>
+                <td>
+                    <label for="password">Пароль для <br> учетной записи:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addition">Желаемая вакансия<br> (так мы быстрее найдем<br> желаемую вакансию)</label>
+                    </td>
+                    <td>
+                        <input type="text" id="addition" name="addition">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resume">Резюме <br> (так больше шансов <br>найти отклик)</label>
+                    </td>
+                    <td>
+                        <input type="file" id="resume" name="resume">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="display: flex; justify-content: space-between; " >
+                <input type="reset" value="reset" name="reset">
+                <input type="submit" value="submit" name="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
