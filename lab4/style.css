@@ -94,7 +94,7 @@ a {
     height: 50px;
     background-color: #ff5722;
     border-radius: 50%;
-    animation: fall 2.5s ease-in-out forwards;
+    animation: fall 2.5s ease forwards;
 }
 
 @keyframes fall {
