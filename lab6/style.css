@@ -34,14 +34,14 @@ article {
     "eighth ninth ninth tenth";
 }
 
-.grid article:nth-child(1) {
+article:nth-child(1) {
     grid-area: first;
 }
 
-.grid article:nth-child(3) {
+article:nth-child(3) {
     grid-area: third;
 }
 
-.grid article:nth-child(9) {
+article:nth-child(9) {
     grid-area: ninth;
 }
